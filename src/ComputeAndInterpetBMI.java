@@ -16,9 +16,9 @@ public class ComputeAndInterpetBMI {
         final double metersPerInch = 0.0254;
 
         // convert total height to meters and weight to kilograms
-        double addHeight = (heightFeet * 12) + heightInches;
+        double totalHeight = (heightFeet * 12) + heightInches;
         double weightInKilograms = weight * kilogramsPerPound;
-        double heightInMeters = addHeight * metersPerInch;
+        double heightInMeters = totalHeight * metersPerInch;
 
         // calculate BMI
         double bmi = weightInKilograms / (heightInMeters * heightInMeters);
